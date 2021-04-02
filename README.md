@@ -1,6 +1,7 @@
 # GxEsum
 GxEsum: Genotype-by-environment interaction model based on GWAS summary statistics
-## Users should prepare LDSC (munge_sumstats.py and ldsc.py) and PLINK (v1.9) software that are ready to run in the folder.
+
+Users should prepare LDSC (munge_sumstats.py and ldsc.py) and PLINK (v1.9) software that are ready to run in the folder.
 
     * if LDSC is not working, please try to upgrade python pacakge, e.g. pip install --upgrade numpy==1.16.0
       (change numpy==1.12 to numpy==1.16.0 in the environment.yml file for using Anaconda3. You can fix the environment.yml file)
@@ -39,10 +40,7 @@ The command in shell script to process the R script is
 
 e.g., R CMD BATCH --no-save input_for_munge.R
 
-
-     # Munge your data using the generated input file from R script above
-
-
+Munge your data using the generated input file from R script above
 
 e.g., ./munge_sumstats.py --sumstats example.ldsc --merge-alleles w_hm3.snplist --out example
 
@@ -51,7 +49,7 @@ This command will output .sumstats.gz format file that is generated based on you
 * To make munge_sumstats.py complete GWAS Summary statistics conversion faster, you can reduce the chunksize from 5000000 (default) to 500000 by adding the option --chunksize 500000.
 
 
-    # Estimating the phenotypic variance explained by GxE effects (LD score regression)
+Estimating the phenotypic variance explained by GxE effects (LD score regression)
 
 using the LD Score that can be estimated based on your own plink binary data or downloaded the estimated 1000 Genomes Europeans LDSC.
 
