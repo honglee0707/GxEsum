@@ -1,0 +1,40 @@
+
+R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+>   g0=read.table("result.ldsc_g0")
+>   gxe=read.table("result.ldsc_gxe")
+> 
+>   colnames=c("Main genetic variance", "GxE variance")
+>   p1=pchisq((g0$V1[1]/g0$V2[1])^2,1,lower.tail=F)
+>   p2=pchisq((gxe$V1[1]/gxe$V2[1])^2,1,lower.tail=F)
+> 
+>   sink("GxEsum.out")
+>   cat("			Main genetic effects	GxE interaction","\n")
+>   cat("Estimated intercept:	",g0$V1[2],"		",gxe$V1[2],"\n")
+>   cat("Estimated variance :	",g0$V1[1],"		",gxe$V1[1],"\n")
+>   cat("SE      	   :	",g0$V2[1],"		",gxe$V2[1],"\n")
+>   cat("P-value 	   :	",p1,"		",p2,"\n")
+>   sink()
+> 
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  0.153   0.079   0.188 

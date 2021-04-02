@@ -1,0 +1,30 @@
+PLINK v1.90b3.46 64-bit (13 Feb 2017)
+Options in effect:
+  --allow-no-sex
+  --bfile example
+  --covar example.cov
+  --linear interaction
+  --out example
+  --parameters 1, 2, 3
+  --pheno example_quant.pheno
+
+Hostname: hscpl-statgen.cw.unisa.edu.au
+Working directory: /data/hsc-admhl/release/GxEsum_example
+Start time: Fri Apr  2 12:51:15 2021
+
+Random number seed: 1617330075
+1546526 MB RAM detected; reserving 773263 MB for main workspace.
+5000 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to example.nosex .
+100 phenotype values present after --pheno.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 1 covariate loaded.
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.991748.
+5000 variants and 100 people pass filters and QC.
+Phenotype data is quantitative.
+Writing linear model association results to example.assoc.linear ... done.
+
+End time: Fri Apr  2 12:51:15 2021

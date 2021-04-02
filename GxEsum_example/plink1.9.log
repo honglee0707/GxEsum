@@ -1,0 +1,25 @@
+PLINK v1.90b3.46 64-bit (13 Feb 2017)      https://www.cog-genomics.org/plink2
+(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to example.log.
+Options in effect:
+  --allow-no-sex
+  --bfile example
+  --covar example.cov
+  --linear interaction
+  --out example
+  --parameters 1, 2, 3
+  --pheno example_quant.pheno
+
+1546526 MB RAM detected; reserving 773263 MB for main workspace.
+5000 variants loaded from .bim file.
+100 people (0 males, 0 females, 100 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to example.nosex .
+100 phenotype values present after --pheno.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 1 covariate loaded.
+Before main variant filters, 100 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.991748.
+5000 variants and 100 people pass filters and QC.
+Phenotype data is quantitative.
+Writing linear model association results to example.assoc.linear ... 0%8%17%24%30%37%43%49%54%59%64%69%74%77%80%83%86%90%92%94%97%98%done.
