@@ -46,7 +46,7 @@ e.g., ./munge_sumstats.py --sumstats example.ldsc --merge-alleles w_hm3.snplist 
 
 This command will output .sumstats.gz format file that is generated based on your GWAS summary statistics
 
-* To make munge_sumstats.py complete GWAS Summary statistics conversion faster, you can reduce the chunksize from 5000000 (default) to 500000 by adding the option --chunksize 500000.
+To make munge_sumstats.py complete GWAS Summary statistics conversion faster, you can reduce the chunksize from 5000000 (default) to 500000 by adding the option --chunksize 500000.
 
 
 Estimating the phenotypic variance explained by GxE effects (LD score regression)
